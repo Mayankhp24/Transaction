@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assests/CSS/main.css">
     <title>Transactions</title>
 </head>
-<header>
-    <div class="head">
-        <h4 id="name"><span id="photo"></span>John Doe</h4>
-        <p id="phone_no">+91 7672 2345</p>
-    </div>
-</header>
+<div class="body_border">
+    <header>
+        <div class="head">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi" viewBox="0 0 16 16" >
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg><img src="Assests/img/J.jpg" alt="img" class="img"></span>
+        
+                <p id="name_no"><span class="name">John Doe</span> <br> +91 7672 2345</p>
+            </span>
+        </div>
+    </header>
 
-<body>
-    <div class="container">
-        <h6 class="date">7 Oct 2020</h6>
-        <p class="price">3000</p><span class="process" class="done">You paid</span>
-        <p class="trans">Transaction ID</p>
-        <p class="trans_id">A1234156256787382783899</p>
-    </div>
-    <div class="time_date_trans">7 oct 2020, 10:24 PM</div>
+    <body>
+        <div class="inner_border">
+            <h6 class="date">7 Oct 2020</h6>
 
-    <div class="container">
-        <h6 class="date">18 Nov 2020</h6>
-        <p class="price">250</p><span class="process" class="pending">You requested</span>
-        <div class="btn"><button class="cancel">cancel</button></div>
-    </div>
-    <div class="time_date_trans">18 Nov 2020, 10:24 AM</div>
+            <div class="container_right">
+                <p class="price">&#8377 3000<span class="process"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANJJREFUSEvt1MENAiEQheF/K9ASLMESLMEOjBVYg51Ygh24JViCLdiBmYRNCLLOALPuBS4cIHzMy8DASmNYyaXDf0u+R92jbkngBoyAzF9jqeYS7BS0cw5fAo7RN3AAnmnJ3rAJlUt4wmbUEy5CLfAWuADXH+1djGqwoA9gH7pSujMdVagGCyjvcBM0QWK8GtVgWZ/Dm1ALnMNfwC6kMPtOtS/P+pzSyuXcatRa8XT5GG9CS+Ep9jtwzH2DWrzxujXqkjNNeztsisljU4/aI0XTGR8E1S8fISP2WQAAAABJRU5ErkJggg==" class="check"/>You paid</span></p>
+                <p class="trans">Transaction ID</p>
+                <p class="trans">A1234156256787382783899</p>
+            </div>
+            <div class="time_date_trans">7 Oct 2020, 10:24 PM</div>
 
-    <div class="container">
-        <h6 class="date">19 Nov 2020</h6>
-        <p class="price">250</p><span class="process" class="done">You received</span>
-        <p class="trans">Transaction ID</p>
-        <p class="trans_id">A1234156256787382783899</p>
-    </div>
-    <div class="time_date_trans">19 Nov 2020, 10:24 AM</div>
+            <h6 class="date">18 Nov 2020</h6>
 
-    <div class="container">
-        <p class="price">250</p><div class="process" class="pending">Request received</div>
-        <span class="btn"><button class="cancel">pay</button></span>
-        <span class="btn"><button class="cancel">Decline</button></span>
-    </div>
-    <div class="time_date_trans">19 Nov 2020, 10:24 AM</div>
-</body>
+            <div class="container_right">
+                <p class="price">&#8377 250<span class="process"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgJJREFUSEvdljsyREEUhr9ZgccGsAGPUIRcFQKkZDKsACtAJiMmIJAjEnpsgBV47ED96vTUuUfP7Zm51FTpZKbn3u6v/z7/3z0tBtRaA+LyL8DzwBgwDjwCT8Brpx39DcXTwCmgz9iOgN0cvCl4w6Bp7k9TO+dgUj8T4U3AHirgDnBmgGH7vmT9Y3ve5vcLjlDVV8piuwISfMLXvB/wMnBpBCn10Eng2dGl/N36K4AW8t36AWuyW3Ovh64CJ8AicO/gelc1PwD2m4A1VvAUG/UFPbdJ34AFp/wDGAI2nQf6Uhzr6KF6tu4WIcMd2gAtRuq73mrVVAO08l6gyvWDDdBhUsl5qcbJvXKsVuzhdUoFubGSiK0cV1xfB66LTC/QSm1LW/2n0E5x8rWJOa1TmtwuP0xFF0dz5LZatdDAEnQNuMgYTlFTvtuHReadH3HSAJlCzdcmKu0EzTGyv0XFqbZSq5Wr6RjUYkat76Eqi+7cXNRqFxHBOtL2gDvbrjR4FrgGttz2psgIHKNWVB7B/gIYCUr8BRBzWrkAitTMJaHz98UGyhyaMLYIzea0BM+5Wn9Xth1cE6ca+rM3GrDEqjzPgdO1p0ilpmxKaTJcI6gGdzoyBZDRknK/Wh34cn/uH0fXqkuXhGoupSk2cnD7auuaknmxBG4yd085/jNQnHhgir8AELJ5HxwXe44AAAAASUVORK5CYII=" class="pending"/> You requested</span></p>
+                <button class="cancel">cancel</button>
+            </div>
+            <div class="time_date_trans">18 Nov 2020, 10:24 AM</div>
+
+            <h6 class="date">19 Nov 2020</h6>
+
+            <div class="container" class="left">
+                <p class="price">&#8377 250<span class="process"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANJJREFUSEvt1MENAiEQheF/K9ASLMESLMEOjBVYg51Ygh24JViCLdiBmYRNCLLOALPuBS4cIHzMy8DASmNYyaXDf0u+R92jbkngBoyAzF9jqeYS7BS0cw5fAo7RN3AAnmnJ3rAJlUt4wmbUEy5CLfAWuADXH+1djGqwoA9gH7pSujMdVagGCyjvcBM0QWK8GtVgWZ/Dm1ALnMNfwC6kMPtOtS/P+pzSyuXcatRa8XT5GG9CS+Ep9jtwzH2DWrzxujXqkjNNeztsisljU4/aI0XTGR8E1S8fISP2WQAAAABJRU5ErkJggg==" class="check"/> You received</span></p>
+                <p class="trans">Transaction ID</p>
+                <p class="trans">A1234156256787382783899</p>
+            </div>
+            <div class="time_date_trans_left">19 Nov 2020, 10:24 AM</div>
+
+            <div class="container">
+                <p class="price">&#8377 250<span class="process"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgJJREFUSEvdljsyREEUhr9ZgccGsAGPUIRcFQKkZDKsACtAJiMmIJAjEnpsgBV47ED96vTUuUfP7Zm51FTpZKbn3u6v/z7/3z0tBtRaA+LyL8DzwBgwDjwCT8Brpx39DcXTwCmgz9iOgN0cvCl4w6Bp7k9TO+dgUj8T4U3AHirgDnBmgGH7vmT9Y3ve5vcLjlDVV8piuwISfMLXvB/wMnBpBCn10Eng2dGl/N36K4AW8t36AWuyW3Ovh64CJ8AicO/gelc1PwD2m4A1VvAUG/UFPbdJ34AFp/wDGAI2nQf6Uhzr6KF6tu4WIcMd2gAtRuq73mrVVAO08l6gyvWDDdBhUsl5qcbJvXKsVuzhdUoFubGSiK0cV1xfB66LTC/QSm1LW/2n0E5x8rWJOa1TmtwuP0xFF0dz5LZatdDAEnQNuMgYTlFTvtuHReadH3HSAJlCzdcmKu0EzTGyv0XFqbZSq5Wr6RjUYkat76Eqi+7cXNRqFxHBOtL2gDvbrjR4FrgGttz2psgIHKNWVB7B/gIYCUr8BRBzWrkAitTMJaHz98UGyhyaMLYIzea0BM+5Wn9Xth1cE6ca+rM3GrDEqjzPgdO1p0ilpmxKaTJcI6gGdzoyBZDRknK/Wh34cn/uH0fXqkuXhGoupSk2cnD7auuaknmxBG4yd085/jNQnHhgir8AELJ5HxwXe44AAAAASUVORK5CYII=" class="pending"/>Request received</span></p>
+                <button id="pay">Pay</button>
+                <button>Decline</button>
+            </div>
+            <div class="time_date_trans_left">19 Nov 2020, 10:24 AM</div>
+        </div>
+    </body>
+</div>
+
 </html>

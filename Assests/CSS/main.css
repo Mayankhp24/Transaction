@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Glory', sans-serif;
+}
+
+header .head{
+    height: 50px;
+    border: 2px solid black;
+    border-bottom: thin;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.inner_border{
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 575px;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.body_border{
+    border: 2px solid black;
+    width: 550px;
+    height: 640px;
+}
+
+.container{
+    border: 2px solid black;
+    width: 285px;
+    height: 80x;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.container_right{
+    margin-left: auto;
+    margin-right: 10px;
+    width: 278px;
+    height: 80x;
+    border: 2px solid black;
+    margin-top: 15px;
+    
+}
+
+.time_date_trans{
+    text-align: right;
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.date {
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+.date::before, .date::after {
+    content: '';
+    flex: 1;
+    border-bottom: 3px dotted #000;
+}
+
+.date:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+.date:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+.time_date_trans_left{
+    width: 299px;
+    text-align: right;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.price{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.process{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 55px;
+}
+
+.trans{
+    font-size: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+button{
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 3px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.head .img {
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-top: -16px;
+  }
+
+.back{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#name_no{
+    float: right;
+    margin-right: 370px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.name{
+    font-size: 17px;
+}
+
+.check{
+    height: 17px;
+    margin-right: 1px;
+}
+
+.pending{
+    height: 17px;
+    margin-right: 1px;
+}
+
+.bi{
+    margin-left: 10px;
+    margin-top: 13px;
+}
