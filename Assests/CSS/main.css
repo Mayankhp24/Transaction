@@ -24,7 +24,7 @@ header .head{
     border: 2px solid black;
     margin-left: 5px;
     margin-right: 5px;
-    height: 575px;
+    height: 595px;
 }
 
 body{
@@ -34,38 +34,36 @@ body{
     min-height: 100vh;
 }
 
-.body_border{
-    border: 2px solid black;
-    width: 550px;
-    height: 640px;
-}
-
 .container{
     border: 2px solid black;
     width: 285px;
     height: 80x;
     margin-left: 10px;
     margin-top: 15px;
+    cursor: pointer;
 }
 .container_right{
+    text-decoration: none;
     margin-left: auto;
     margin-right: 10px;
     width: 278px;
     height: 80x;
-    border: 2px solid black;
+    border: 2px solid rgb(39, 33, 33);
     margin-top: 15px;
-    
+    cursor: pointer;
 }
 
 .time_date_trans{
     text-align: right;
     margin-right: 10px;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .date {
-    margin-top: 9px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 13px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -93,6 +91,7 @@ body{
 }
 
 .price{
+    text-decoration: none;
     font-size: 35px;
     margin-top: 10px;
     margin-left: 10px;
@@ -100,14 +99,15 @@ body{
 
 .process{
     font-size: 12px;
-    font-weight: bolder;
-    margin-left: 55px;
+    font-weight: normal;
+    margin-left: 70px;
 }
 
 .trans{
     font-size: 10px;
     margin-left: 10px;
-    font-weight: bold;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
 button{
@@ -119,6 +119,10 @@ button{
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+button:hover{
+    background-color: bisque;
 }
 
 .head .img {
@@ -138,13 +142,14 @@ button{
 
 #name_no{
     float: right;
-    margin-right: 370px;
-    margin-top: 12px;
+    margin-right: 374px;
+    margin-top: 10px;
     font-size: 12px;
 }
 
 .name{
     font-size: 17px;
+    margin-left: 5px;
 }
 
 .check{
